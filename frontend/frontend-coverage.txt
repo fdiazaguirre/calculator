@@ -1,0 +1,33 @@
+npm warn Unknown user config "blockExoticSubdeps". This will stop working in the next major version of npm.
+npm warn Unknown user config "minimumReleaseAge". This will stop working in the next major version of npm.
+
+> frontend@0.0.0 test:ci
+> vitest run --coverage
+
+
+ RUN  v4.1.10 /Users/federicodiaz/dev/my-repos/calculator/frontend
+      Coverage enabled with v8
+
+
+ Test Files  2 passed (2)
+      Tests  25 passed (25)
+   Start at  10:38:09
+   Duration  1.34s (transform 68ms, setup 73ms, import 191ms, tests 774ms, environment 610ms)
+
+ % Coverage report from v8
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |    98.5 |    96.36 |     100 |   98.48 |                   
+ ...nts/Calculator |     100 |       95 |     100 |     100 |                   
+  Calculator.tsx   |     100 |       95 |     100 |     100 | 70                
+ services          |   96.15 |    95.45 |     100 |      96 |                   
+  calculatorApi.ts |   96.15 |    95.45 |     100 |      96 | 18                
+-------------------|---------|----------|---------|---------|-------------------
+
+=============================== Coverage summary ===============================
+Statements   : 98.5% ( 66/67 )
+Branches     : 96.36% ( 53/55 )
+Functions    : 100% ( 14/14 )
+Lines        : 98.48% ( 65/66 )
+================================================================================

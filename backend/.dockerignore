@@ -1,0 +1,6 @@
+Dockerfile
+.dockerignore
+*.out
+coverage.*
+*.test
+.git

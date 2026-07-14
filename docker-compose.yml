@@ -1,0 +1,19 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      PORT: "8080"
+      # In the composed stack the browser talks to nginx (same origin), so the
+      # backend does not need to emit permissive CORS headers to a dev origin.
+      ALLOWED_ORIGIN: "http://localhost"
+    expose:
+      - "8080"
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    restart: unless-stopped
