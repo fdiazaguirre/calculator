@@ -27,6 +27,19 @@ go.work.sum
 # env file
 .env
 
+# Node / React / TypeScript
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
 # Editor/IDE
 # .idea/
 # .vscode/
+
+session-log.md
