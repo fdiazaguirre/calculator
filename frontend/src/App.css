@@ -1,0 +1,6 @@
+.app-shell {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: clamp(var(--space-md), 5vw, var(--space-xl));
+}
